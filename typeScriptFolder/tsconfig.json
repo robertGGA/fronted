@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "outDir": "dist",
+    "baseUrl": "index.ts",
+    "sourceMap": true
+  }
+}

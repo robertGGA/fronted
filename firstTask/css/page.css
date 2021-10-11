@@ -168,8 +168,10 @@ a {
     display: flex;
     align-items: center;
     padding-right: 20px;
+}
 
-
+[class~='list_header_item']:last-of-type {
+    padding-right: 36px;
 }
 
 .list_header_item:first-child {
@@ -180,6 +182,10 @@ a {
 
     align-self: center;
     padding-top: 7px;
+}
+
+.number_span {
+    padding-right: 30px;
 }
 
 .a_header {
@@ -240,6 +246,11 @@ a {
     line-height: 20px;
 }
 
+.row_tagline {
+    flex-direction: row;
+    display: flex;
+}
+
 .tagline_border {
     border-bottom: 3px solid #B4ABAB;
     padding-bottom: 20px;
@@ -294,6 +305,10 @@ a {
     font-weight: normal;
     font-size: 25px;
     line-height: 30px;
+}
+
+.line_height_description_span {
+    line-height: normal;
 }
 
 .container_cards {
@@ -383,6 +398,7 @@ a {
     display: flex;
     margin-top: 120px;
     justify-content: center;
+    font-size: 50px;
 }
 
 .interactive_cards {
@@ -464,9 +480,39 @@ a {
     top: 490px;
 }
 
+.slider_buttons_position {
+    top: 640px
+}
+
 .slider_button_elem {
     background: rgba(196, 196, 196, 0.8);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.slider_left_arrow {
+    top: 0px;
+    margin: 0px;
+    transform: scale(1, -1);
+    left: 20px;
+}
+
+.right_slider_arrow {
+    top: 0px;
+    margin: 0px;
+    right: 20px;
+}
+
+.slider_button_elem:first-child {
+    top: 0px;
+    margin: 0px;
+    transform: scale(1, -1);
+    left: 20px;
+}
+
+.slider_button_elem:last-child {
+    top: 0px;
+    margin: 0px;
+    right: 20px;
 }
 
 .heading_business_container {
@@ -554,6 +600,10 @@ a {
     font-weight: 600;
     font-size: 35px;
     line-height: 30px;
+}
+
+.business_content_description_wrapper {
+    max-width: 513px;
 }
 
 .business_content_description {
@@ -710,6 +760,11 @@ a {
     position: relative;
     top: 50px;
     right: 40px;
+}
+
+.device_button_slider_wrapper {
+    flex-direction: row;
+    display: flex;
 }
 
 .device_button_slider {
@@ -909,6 +964,10 @@ a {
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+}
+
+.plus_svg_settings {
+    margin-right: 15px;
 }
 
 .scenario {
@@ -1118,6 +1177,14 @@ a {
     color: #000000;
 }
 
+.input_text_footer_color {
+    color: #C4C4C4;
+}
+
+.hotline_wrapper {
+    margin-top: 46px;
+}
+
 .label_input_footer {
     display: flex;
     margin-bottom: 5px;
@@ -1175,6 +1242,10 @@ a {
     flex-direction: column;
 }
 
+.checkbox_settings {
+    margin-right: 12px;
+}
+
 .label_email {
     font-family: Open Sans;
     font-style: normal;
@@ -1199,12 +1270,16 @@ a {
     font-size: 30px;
     line-height: 100%;
     /* identical to box height, or 30px */
-
-
     color: #000000;
     padding-bottom: 5px;
     padding-right: 60px;
     border-bottom: 1px solid black;
+    margin-right: 69px;
+}
+
+.number_info {
+    margin-right: 0;
+    padding-right: 0px;
 }
 
 .last_elem {
@@ -1233,11 +1308,23 @@ a {
     background-position: right 30px bottom 10px;
 }
 
+.last_png_card {
+    top: 0;
+}
+
 .second_img {
     display: flex;
     position: relative;
     top: 25px;
     right: 10px;
+}
+
+.second_img_settings {
+    height: 222px;
+    width: 235px;
+    position: relative;
+    bottom: 30px;
+    right: 40px;
 }
 
 .rectangle {
