@@ -1345,6 +1345,23 @@ a {
     border-width: 70px 720px 0 720px;
     border-color: #f9f9f9 transparent transparent transparent;
 }
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 0 auto;
+    }
+    header {
+        display: none;
+    }
+
+    .title_main {
+        text-align: center;
+    }
+
+    footer {
+        display: none;
+    }
+}
 /* .footer:before {*/
 /*    content: "";*/
 /*    display: inline-block;*/

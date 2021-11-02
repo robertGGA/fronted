@@ -1,0 +1,428 @@
+/* source-sans-pro-200 - latin_cyrillic */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/source-sans-pro-v14-latin_cyrillic-200.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-200.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-200.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-200.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-200.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/source-sans-pro-v14-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-300.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+/* source-sans-pro-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/source-sans-pro-v14-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/source-sans-pro-v14-latin_cyrillic-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-800 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-800.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-800.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-800.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans/open-sans-v23-latin_cyrillic-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+
+}
+
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: normal;
+    background-color: #F5F5F5;
+}
+
+.wrapper {
+    max-width: 1078px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_list_item {
+    margin-right: 18px;
+    list-style-type: none;
+
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    color: black;
+}
+
+.header_list_item:last-child {
+    margin-right: 0;
+}
+
+.header_list_item-link {
+    color: black;
+    text-decoration: none;
+}
+
+.header_list_item-link:hover, .header_list_item-link:active, .header_list_item-link:focus {
+    opacity: .50;
+}
+
+.header_list_item-button {
+    padding: 7px 10px;
+    margin: 8px 0 8px 0;
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border-radius: 20px;
+    border: 0;
+    color: white;
+}
+
+.first_title {
+    padding: 54px 0 0 0;
+    text-align: start;
+}
+
+.info_block_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.first_image {
+    position: absolute;
+    left: 47%;
+    top: 70px;
+}
+
+.information_block {
+    margin-top: 130px;
+    white-space: nowrap;
+}
+
+.tagline_of_slogan {
+    display: inline-block;
+    border: solid #B4ABAB;
+    padding-bottom: 20px;
+    border-width: 0 0 3px 0;
+    width: 50%;
+}
+
+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+
+}
+
+.information_block_description {
+    display: flex;
+    margin-top: 20px;
+}
+
+.half_of_info_block_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.h_pos_center {
+    text-align: center;
+}
+
+.with_us_everything_is_simple {
+    margin-top: 308px;
+}
+
+.second_block {
+    margin-top: 120px;
+}
+
+.without_margins {
+    margin: 0;
+}
+
+.container_with_img_and_descr {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.description_block {
+    display: flex;
+    max-width: 455px;
+    white-space: normal;
+}
+
+.image_in_container {
+    width: 564px;
+    height: 273px;
+}
+
+.cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 98px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 210px;
+
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border-radius: 10px;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    bottom: 18%;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    background: linear-gradient(70.6deg, #35CC79 100.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border: 6px solid #f9f9f9;
+    justify-content: center;
+}
+
+.card_content {
+    position: relative;
+    bottom: 23px;
+    margin: 0 auto;
+}
+
+.card_title {
+    max-width: 160px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+
+.normal_weight_font {
+    max-width: 205px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.card_content_description {
+    border-top: 3px solid #B4ABAB;
+    max-width: 205px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 801px) {
+    header {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 35px;
+    }
+
+    h3 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .first_title {
+        text-align: start;
+        padding-top: 20px;
+    }
+
+    .tagline_of_slogan {
+        border-bottom: 2px solid #B4ABAB;
+    }
+
+
+    .first_image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .with_us_everything_is_simple {
+        margin-top: 59px;
+    }
+
+    .info_block_wrapper {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .image_in_container {
+        width: 335px;
+        height: 162px;
+    }
+
+    .without_margins {
+        margin-top: 30px;
+    }
+}
