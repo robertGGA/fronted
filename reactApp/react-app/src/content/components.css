@@ -1,0 +1,51 @@
+
+.input_area {
+    max-width: 350px;
+    margin: 0px 16px;
+    padding: 19px 16px;
+    border: none;
+    border-bottom: 1px solid rgba(60, 60, 67, 0.3);
+}
+
+.input_font {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    /* identical to box height, or 129% */
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: rgba(60, 60, 67, 0.3);
+}
+
+.button_submit {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 111px;
+    width: 135px;
+    max-height: 50px;
+    padding: 14px 7px;
+    border-radius: 25px;
+    background: rgba(116, 116, 128, 0.08);
+    font-weight: 600;
+
+    border: none;
+}
+
+.row_container {
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: rgba(60, 60, 67, 0.6);
+
+    font-size: 15px;
+    line-height: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
