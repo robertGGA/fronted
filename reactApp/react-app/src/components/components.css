@@ -20,6 +20,7 @@
 
 .button_submit {
     display: flex;
+    line-height: 1;
     justify-content: center;
     margin: 0 auto;
     margin-top: 111px;
@@ -29,9 +30,33 @@
     border-radius: 25px;
     background: rgba(116, 116, 128, 0.08);
     font-weight: 600;
+    color: #002DFF;
 
+    border: 3px solid #002DFF;
+}
+
+.button_submit:disabled {
+    color: rgba(60, 60, 67, 0.3);
     border: none;
 }
+
+.error_message {
+    text-align: center;
+    margin-top: 18px;
+    color: #EB5757;
+}
+
+form {
+    margin-top: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input_area:focus {
+    color: black;
+}
+
 
 .row_container {
     margin-top: 52px;
