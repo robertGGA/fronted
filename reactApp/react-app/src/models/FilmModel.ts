@@ -3,5 +3,7 @@ export default interface FilmModel {
     year: number,
     desc: string,
     genre: string[],
-    poster: string
+    poster: string,
+    rate: number,
+    id: number
 }

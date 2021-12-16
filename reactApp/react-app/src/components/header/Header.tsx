@@ -1,9 +1,18 @@
 import "./header.sass";
 import {HeaderButton} from "./HeaderButton";
-import logo from "./../Layout/Watch_Later_Logo_Full.svg"
+import logo from "./../../assets/Watch_Later_Logo_Short.svg";
 import search from "../../assets/search.svg";
 import profileIcon from "../../assets/Ellipse 1.svg";
-const Header = () => {
+import {useContext} from "react";
+import {StoreContext} from "../../store.context";
+
+import {observer} from "mobx-react";
+
+const Header = observer(() => {
+    const {mainStore} = useContext(StoreContext);
+
+
+    // const user = mainStore.userStore.getUserByToken(mainStore.authStore.getAccessToken());
     return(
         <header className="header_wrapper">
             <div className="header">
@@ -29,7 +38,8 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    );
-};
+    )
+
+});
 
 export default Header;

@@ -1,26 +1,40 @@
-import {makeAutoObservable} from "mobx";
+import {action, makeAutoObservable, makeObservable, observable} from "mobx";
 
 export class AuthStore {
-    private authenticated = false;
+    authenticated = false;
+
+
     constructor() {
-       makeAutoObservable(this);
+        makeAutoObservable(this);
+        this.authenticated = !!this.getAccessToken();
     }
 
-    isAuthenticated(): boolean {
+     isAuthenticated(): boolean {
         return this.authenticated;
     }
 
-    private setAuthenticated(authenticated: boolean) {
+     setAuthenticated(authenticated: boolean) {
         this.authenticated = authenticated;
     }
 
-    async login() {
+      login() {
         try {
-            const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzQ1Njc4In0.yXkZ6lm4BRunBpiA_XTMRfp_Ddq0wRpyAIYeBnomFrs";
-            localStorage.setItem("access_token", token);
+            console.log("LOGIN");
             this.setAuthenticated(true);
+            console.log(this.isAuthenticated);
         } catch (err) {
+            console.log("ERROR");
             this.setAuthenticated(false);
+            console.log(this.isAuthenticated);
         }
+    }
+
+    logout() {
+        localStorage.removeItem("access_token");
+        this.setAuthenticated(false);
+    }
+
+    getAccessToken() {
+        return localStorage.getItem("access_token");
     }
 }

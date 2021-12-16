@@ -18,6 +18,12 @@ export class UserStore {
         this.users.push(user);
     }
 
+    getUserByToken(token: string | null) {
+        if (token) {
+            return this.getUserById(1);
+        }
+    }
+
     getUser(email: string, password: string) {
         return this.users.find((user => user.email === email && user.password === password));
     }

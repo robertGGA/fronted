@@ -4,8 +4,10 @@ import React, {useContext, useEffect, useState} from "react";
 import {observer} from "mobx-react-lite";
 import UserStore from "../stores/UserStore";
 import {StoreContext} from "../store.context";
+import {Link} from "react-router-dom";
 
-export const LoginForm = observer(() => {
+
+const LoginForm = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -17,6 +19,7 @@ export const LoginForm = observer(() => {
 
     const { mainStore } = useContext(StoreContext);
     const userStore = mainStore.userStore;
+    const authStore = mainStore.authStore;
 
     const emailHandler = async (e: any) => {
 
@@ -49,8 +52,12 @@ export const LoginForm = observer(() => {
             setIsPressed(true);
             setBothError(false);
             setTimeout(() => {
-                mainStore.authStore.login();
+                localStorage.setItem("access_token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjEyM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzQ1Njc4In0.yXkZ6lm4BRunBpiA_XTMRfp_Ddq0wRpyAIYeBnomFrs");
+
+                mainStore.authStore.setAuthenticated(true);
+
                 setIsPressed(false);
+                window.location.href = "/collection";
                 // window.open("/collection");
             }, 3000);
 
@@ -72,7 +79,13 @@ export const LoginForm = observer(() => {
             <input onChange={emailHandler} name={"email"} placeholder={"Адрес электронной почты"} type={"search"} className='input_area input_font' required/>
             <input onChange={passwordHandler} name={"password"} placeholder={"Пароль"} type={"Password"} className='input_area input_font' required/>
             {(bothError || errorEmail) && <p className="error_message">{error}</p>}
-            {(!isPressed) && <input onClick={(e) => submitHandler(e)} disabled={!isValidButton} name={"submit"} placeholder={"Войти"} type={"submit"} className='button_submit input_font' id='loginSubmit' required/>}
+            <Link to={"/collection"}>
+                {(!isPressed) && <input onClick={(e) => submitHandler(e)} disabled={!isValidButton} name={"submit"} placeholder={"Войти"} type={"submit"} className='button_submit input_font' id='loginSubmit' required/>}
+            </Link>
         </form>
     );
-});
+};
+
+const Login = observer(LoginForm)
+
+export {Login};
