@@ -59,6 +59,6 @@ export const FilmPage = () => {
             </main>
         );
     } else return (
-        <p>fdf</p>
+        <p>error</p>
     );
 }

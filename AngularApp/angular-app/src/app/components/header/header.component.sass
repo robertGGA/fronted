@@ -1,0 +1,78 @@
+$headcolor: rgba(249, 249, 249, 0.94)
+$buttoncolor: #002DFF
+
+header
+  background: $headcolor
+  width: 100%
+p
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 21px
+  margin: 0
+
+button
+  background: none
+  border: none
+
+.header_wrapper
+  max-width: 1440px
+  margin: 0 auto
+  height: 70px
+  display: flex
+
+.buttons_header
+  display: flex
+  border-radius: 22px
+  flex-direction: row
+  align-items: center
+  padding: 9px 12px
+
+
+.isActive
+  color: white
+  background-color: $buttoncolor
+
+
+
+nav
+  display: flex
+  width: 100%
+  align-items: center
+  padding: 0 32px 0 26px
+  justify-content: space-between
+  flex-direction: row
+  align-self: center
+
+  .left_nav
+    display: flex
+
+    .button_icon
+      display: inherit
+      width: 24px
+      height: 24px
+      margin-right: 12px
+
+    .buttons_header:last-child
+      margin-left: 42px
+
+
+  .right_nav
+    display: flex
+
+    .button_icon
+      display: inherit
+      width: 21px
+      height: 21px
+      margin-right: 12px
+
+.logo
+  width: 47px
+  height: 18px
+
+.user_avatar
+  background-color: gold
+  width: 40px
+  height: 40px
+  margin-left: 21px
+  border-radius: 50%
