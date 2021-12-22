@@ -1,0 +1,9 @@
+<div class="input_container">
+  <label class="input_label">Название</label>
+  <input class="input_area" type="search" aria-label="1231" placeholder="Например, Титаник" [(ngModel)]="firstname"  (ngModelChange)="search()" >
+</div>
+
+<div *ngFor= "let film of films">
+  <app-film-card *ngIf="film.id != 0" [name]="film.name" [poster]="film.poster" [year]="film.year.toString()">
+  </app-film-card>
+</div>

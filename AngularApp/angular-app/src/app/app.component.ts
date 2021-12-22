@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {Film, FilmsService} from "./services/Films.service";
 
 
 @Component({
@@ -8,16 +7,6 @@ import {Film, FilmsService} from "./services/Films.service";
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-   films: Film[] = [];
-
-   constructor(private _filmService: FilmsService) {}
-
-  ngOnInit(): void {
-    this.getFilms();
-  }
-
-  getFilms() {
-     this.films = this._filmService.getFilm();
-  }
-
+   title: string = "fdf";
+   constructor() {}
 }

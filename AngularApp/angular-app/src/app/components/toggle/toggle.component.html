@@ -1,0 +1,8 @@
+<div class="slider_container">
+  <button class="slider-button" (click)="toggle(true)" [class.slider-button-disabled]="flag">
+    Кинопоиск
+  </button>
+  <button class="slider-button" (click)="toggle(false)" [class.slider-button-disabled]="!flag">
+    Вручную
+  </button>
+</div>
