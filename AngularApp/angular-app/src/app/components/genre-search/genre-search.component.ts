@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, forwardRef, Input } from '@angular/core';
 import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from "@angular/forms";
 import {ConnectedPosition, Overlay, OverlayContainer, OverlayModule} from '@angular/cdk/overlay';
+import {Option} from "@angular/cli/models/interface";
 
 
 export interface Genre {
@@ -47,7 +48,7 @@ export class GenreSearchComponent implements ControlValueAccessor {
 
   overlayIsOpen: boolean = false;
 
-  selected: Array<Genre> = new Array<Genre>();
+  selected: Genre[];
 
   positions: ConnectedPosition[] = [
     {
@@ -105,8 +106,8 @@ export class GenreSearchComponent implements ControlValueAccessor {
   }
 
   selectGenre(genre: Genre): void {
-    console.log(typeof this.selected)
-    this.selected.push(genre);
+    let array = new Array(genre);
+    this.selected = array; // this.selected.push(genre); Не понимаю почему выдает string'у вместо массива объектов, поэтому костыль на один элемент
     this.overlayIsOpen = false;
     this.inputSearch.reset();
 
