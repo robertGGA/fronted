@@ -1,12 +1,13 @@
-<div class="film-container">
-  <img src="{{poster}}" class="film-poster" />
-
-  <div class="film-info">
-    <p>
-      {{name}}
-    </p>
-    <p>
-      {{year}}
-    </p>
+<a [routerLink]="['/film', id]">
+  <div class="film-container">
+    <img src="{{poster}}" class="film-poster" />
+    <div class="film-info">
+      <p>
+        {{name}}
+      </p>
+      <p>
+        {{year}}
+      </p>
+    </div>
   </div>
-</div>
+</a>

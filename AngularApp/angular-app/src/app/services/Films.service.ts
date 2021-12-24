@@ -9,8 +9,6 @@ export interface Film {
   genres: string[],
   id: number
 }
-
-
 @Injectable({
   providedIn: 'root',
 })
@@ -23,7 +21,12 @@ export class FilmsService {
     return this.films;
   }
 
+  getFilmById(id: number): Film {
+    return  <Film>this.films.find(film => film.id == id);
+  }
 
-
+  saveFilm(film: Film) {
+    this.films.push(film);
+  }
 
 }

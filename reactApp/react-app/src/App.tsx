@@ -6,10 +6,10 @@ import RegistrationPage from "./pages/registration/RegistrationPage";
 import {Routes, Route} from "react-router-dom";
 import {observer, Provider} from "mobx-react";
 import AuthLayout from "./components/Layout/AuthLayout";
-import {MainStore} from "./stores/MainStore";
 import Collection from "./pages/collection/Collection";
 import {StoreContext} from "./store.context";
 import {FilmPage} from "./pages/aboutFilm/FilmPage";
+import {Login} from "./components/LogForm";
 
 const App = observer(() => {
     const {mainStore} = useContext(StoreContext);
@@ -24,6 +24,7 @@ const App = observer(() => {
                     <Route path={"/"} element={<AuthLayout/>}>
                         <Route path={"/collection"} element={<Collection/>}/>
                         <Route path = "/film/:id" element={<FilmPage/>}/>
+                        <Route path="*" element={<Collection />} />
                     </Route>
                 </Routes>
             </Provider>
@@ -33,6 +34,7 @@ const App = observer(() => {
             <Provider store={mainStore}>
                 <Routes>
                     <Route path={"/"} element={<Layout />}>
+                        <Route path={"/"} element={<LoginPage />}/>
                         <Route path={"/login"} element={<LoginPage />}/>
                         <Route path={"/registration"} element={<RegistrationPage />} />
                     </Route>

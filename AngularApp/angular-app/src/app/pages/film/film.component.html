@@ -1,2 +1,38 @@
 <app-toggle>
 </app-toggle>
+
+<div class="film-info-container">
+  <div class="film-info-container-wrapper">
+    <p>Название</p>
+    <div class="film-info-row">
+      <p class="p-color">{{film.name}}</p>
+    </div>
+  </div>
+
+  <div class="film-info-container-wrapper">
+    <p>Год</p>
+    <div class="film-info-row">
+      <p class="p-color">{{film.year}}</p>
+    </div>
+  </div>
+
+  <div class="film-info-container-wrapper">
+    <p>Описание</p>
+    <div class="film-info-row">
+      <p class="p-color">{{film.desc}}</p>
+    </div>
+  </div>
+
+  <div class="film-info-container-wrapper">
+    <p>Жанр</p>
+    <div class="film-info-row">
+      <p *ngFor="let genre of film.genres" class="p-color">{{genre + ", " }}</p>
+    </div>
+  </div>
+  <a [routerLink]="['/search']">
+    <div class="buttons_header">
+      <img src="../../../assets/blue-plus.svg" class="button_icon"/>
+      <p>Cохранить</p>
+    </div>
+  </a>
+</div>

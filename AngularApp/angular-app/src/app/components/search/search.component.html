@@ -4,6 +4,6 @@
 </div>
 
 <div *ngFor= "let film of films">
-  <app-film-card *ngIf="film.id != 0" [name]="film.name" [poster]="film.poster" [year]="film.year.toString()">
+  <app-film-card *ngIf="film.id != 0" [name]="film.name" [poster]="film.poster" [year]="film.year.toString()" [id]="film.id.toString()">
   </app-film-card>
 </div>

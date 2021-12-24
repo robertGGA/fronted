@@ -9,6 +9,7 @@ export class FilmCardComponent implements OnInit {
   @Input() name: string = "";
   @Input() year: string = "";
   @Input() poster: string | undefined = "";
+  @Input() id: string = "";
 
   constructor() { }
 

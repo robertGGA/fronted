@@ -1,0 +1,42 @@
+<app-toggle>
+</app-toggle>
+
+<form [formGroup]="filmForm">
+  <div class="createfilm-container">
+      <div class="input-container">
+       <label for="name">Название </label>
+       <input placeholder="Например, Титаник" class="input-form" id="name" required type="text" formControlName="name">
+      </div>
+      <div class="input-container">
+        <label for="year">Год </label>
+        <input placeholder="Укажите год выхода фильма" class="input-form" required id="year" type="text" formControlName="name">
+      </div>
+      <div class="input-container">
+        <label for="desc">Описание </label>
+        <input placeholder="Напишите пару слов о сюжете" class="input-form" required id="desc" type="text" formControlName="name">
+      </div>
+      <div class="input-container">
+        <label>Жанр</label>
+        <app-genre-search formControlName="genres">
+        </app-genre-search>
+        <div cdk-overlay-origin></div>
+      </div>
+      <div class="input-container">
+        <label>Постер</label>
+        <label class="custom-file-upload">
+            <input required type="file" id="upload-photo">
+            <i>􀈂</i>
+            <p>
+              Загрузить фото
+            </p>
+        </label>
+      </div>
+    <ng-container>
+      <button class="buttons_header">
+        <img class="img_button" src="assets/blue-plus.svg"/>
+        Сохранить
+      </button>
+    </ng-container>
+
+  </div>
+</form>

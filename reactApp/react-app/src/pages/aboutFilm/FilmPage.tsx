@@ -48,6 +48,12 @@ export const FilmPage = () => {
                         {film.desc}
                     </p>
 
+                    <div className='genre_container'>
+                        {
+                            film.genre?.map((genre) => <div className='genre'>{genre}</div>)
+                        }
+                    </div>
+
                     <button onClick={logoutHandler}>
                         logout
                     </button>
