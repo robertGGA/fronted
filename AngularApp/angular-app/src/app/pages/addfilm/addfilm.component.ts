@@ -16,7 +16,9 @@ export class AddfilmComponent implements OnInit {
       "name": new FormControl(''),
       "year": new FormControl(''),
       "desc": new FormControl(''),
-      "genres": new FormControl('')
+      "genres": new FormControl(''),
+      "poster": new FormControl(''),
+      "id": new FormControl(_filmService.getLenghtList())
     });
   }
 
@@ -24,7 +26,10 @@ export class AddfilmComponent implements OnInit {
   }
 
   saveFilm() {
-    console.log(this.filmForm)
+    let film: Film = this.filmForm.value as Film;
+    this._filmService.saveFilm(film);
+    this.filmForm.reset();
+
   }
 
 

@@ -21,6 +21,10 @@ export class FilmsService {
     return this.films;
   }
 
+  getLenghtList() {
+    return this.films.length;
+  }
+
   getFilmById(id: number): Film {
     return  <Film>this.films.find(film => film.id == id);
   }

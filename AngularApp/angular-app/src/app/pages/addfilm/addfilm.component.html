@@ -9,11 +9,11 @@
       </div>
       <div class="input-container">
         <label for="year">Год </label>
-        <input placeholder="Укажите год выхода фильма" class="input-form" required id="year" type="text" formControlName="name">
+        <input placeholder="Укажите год выхода фильма" class="input-form" required id="year" type="text" formControlName="year">
       </div>
       <div class="input-container">
         <label for="desc">Описание </label>
-        <input placeholder="Напишите пару слов о сюжете" class="input-form" required id="desc" type="text" formControlName="name">
+        <input placeholder="Напишите пару слов о сюжете" class="input-form" required id="desc" type="text" formControlName="desc">
       </div>
       <div class="input-container">
         <label>Жанр</label>
@@ -24,7 +24,7 @@
       <div class="input-container">
         <label>Постер</label>
         <label class="custom-file-upload">
-            <input required type="file" id="upload-photo">
+            <input required type="file" id="upload-photo" formControlName="poster">
             <i>􀈂</i>
             <p>
               Загрузить фото
@@ -32,7 +32,7 @@
         </label>
       </div>
     <ng-container>
-      <button class="buttons_header">
+      <button class="buttons_header" (click)="saveFilm()">
         <img class="img_button" src="assets/blue-plus.svg"/>
         Сохранить
       </button>
